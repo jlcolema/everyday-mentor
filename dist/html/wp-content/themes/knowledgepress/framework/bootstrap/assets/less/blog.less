@@ -1,0 +1,27 @@
+.breadcrumb {
+	overflow: hidden;
+}
+
+.row-meta {
+    span.col-md-12,
+    span.col-md-6,
+    span.col-md-4,
+    span.col-md-3,
+    span.col-md-2,
+    span.col-md-1 {
+        width: auto;
+    }
+}
+ 
+.hentry .entry-title i {
+	color: @brand-primary;
+}
+
+.entry-footer, .entry-footer i, .entry-footer a { .generate-entry-footer-text( @body-bg ); }
+
+.generate-entry-footer-text (@body-bg) when (lightness(@body-bg) >= 65%) {
+    color: darken(@body-bg, 25%);
+}
+.generate-entry-footer-text  (@body-bg) when (lightness(@body-bg) < 65%) {
+    color: lighten(@body-bg, 25%);
+}

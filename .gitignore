@@ -1,0 +1,12 @@
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+node_modules/
+dist/html/wp-content/*
+!dist/html/wp-content/themes/
+dist/html/wp-content/themes/twenty*
+dev/backup/
+dev/design/
+dev/documents/
+wp-config*
+*.sql

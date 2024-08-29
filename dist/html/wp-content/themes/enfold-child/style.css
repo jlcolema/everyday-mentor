@@ -1,0 +1,389 @@
+/*
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+/* 	purple is #55136c
+ 	"academics" => array( "color" => "#fc6259", "title" => "Academics"),
+	"sexual-health" => array( "color" => "#5a77d4", "title" => "Sexual Health"),
+	"social-media" => array( "color" => "#A2AD59", "title" => "Social Media"),
+	"teen-life" => array( "color" => "#2080E8", "title" => "Teen Life"),
+	"emotional" => array( "color" => "#53d757", "title" => "Emotional"),
+	"tough-stuff" => array( "color" => "#e966bd", "title" => "Tough Stuff"),
+*/
+
+h4 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* home page CSS */
+.home-page-title {
+
+    color: #55136c;
+	opacity: .75;
+    text-align: center;
+    font-family: Oxygen-Light;
+    line-height: 1.6;
+    font-size: 24pt;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+.home-page-subtitle {
+    color: #55136c;
+    text-align: center;
+    font-family: Oxygen;
+	font-weight: bold;
+    line-height: 1.6;
+    font-size: 24pt;
+	margin-top: 30px;
+	margin-bottom: 10px;
+
+}
+
+/* hide meta data in search results */
+.post-meta-infos {
+    display: none;
+}
+.sidebar .widget:first-child {
+    padding-right: 30px!important;
+}
+.widgettitle { text-transform: none!important; }
+
+/* CSS used in ARTICLE template */
+.article-divider-grey {
+	border: solid #808080;
+	border-width: 1px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	clear: both;
+	display: block;
+}
+.article-divider-white {
+	border-width: 0px;
+	clear: both;
+	display: block;
+}
+#article-left-col {
+	float: left; width: 45%; margin-right: 10px;
+}
+#article-right-col {
+	float: right; width: 45%; margin-right: 20px;
+}
+#main-article-section {
+	margin-left: 60px;
+	margin-top: 60px;
+	margin-right: 60px;
+}
+#article-section {
+	margin-bottom: 40px;
+}
+.article-title {
+	color: #55136c;
+	opacity: .75;
+	font-size: 18pt;
+	line-height: 1.4;
+	margin-bottom: 8px;
+
+}
+.article-summary {
+	/* font-size: 12pt; */
+	margin-bottom: 40px;
+}
+.article-teaser {
+	margin-bottom: 30px;
+}
+
+
+/* CSS used in TOPIC template */
+#main-topic-section {
+	margin-left: 60px;
+	margin-top: 60px;
+	margin-right: 60px;
+}
+#topic-section {
+	margin-bottom: 40px;
+}
+.topic-title {
+	color: #55136c;
+	opacity: .75;
+	font-size: 18pt;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
+.topic-summary {
+	font-size: 1.2em;
+	margin-bottom: 40px;
+}
+.topic-third-level-title {
+	font-weight: bold;
+	font-size: 12pt;
+}
+.topic-teaser {
+	font-size: 11pt;
+	font-family: Oxygen-Light;
+	margin-bottom: 30px;
+}
+
+
+/* CSS used in SKILLS AND TOOLS template */
+.skills-divider-grey {
+	border: solid #808080;
+	border-width: 1px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	clear: both;
+	display: block;
+}
+.skills-divider-white {
+	border-width: 0px;
+	clear: both;
+	display: block;
+}
+#skills-left-col {
+	float: left; width: 45%; margin-right: 10px;
+}
+#skills-right-col {
+	float: right; width: 45%; margin-right: 20px;
+}
+#main-skills-section {
+	margin-left: 60px;
+	margin-top: 60px;
+	margin-right: 60px;
+}
+#skills-section {
+	margin-bottom: 40px;
+}
+.skills-title {
+	color: #54136c;
+	font-size: 1.9em;
+	line-height: 1.4;
+	margin-bottom: 8px;
+
+}
+.skills-summary {
+	font-size: 1.2em;
+	margin-bottom: 40px;
+}
+
+
+/* change ul icons from disc to dash */
+.main_color ul {
+  list-style-type: none!important;
+}
+ul li:before {
+  /* content: '\2014'; */
+  content: '-';
+  position: absolute;
+  margin-left: -14px;
+}
+
+.footer-buttons {
+    font-size: 11px;
+	width: 16%;
+	float: left;
+	text-align: center;
+	padding-right: 10px;
+}
+#footer-button-group {
+	padding-left: 60px;
+}
+
+
+@media only screen and (max-device-width: 500px) {
+#footer-button-group div.footer-buttons{
+	float:none!important;
+	width:auto!important;
+	padding-top:10px!important;
+}
+#footer-button-group {
+    padding-left: 0px!important;
+}
+#f-ttxt{
+	padding-left:0px!important;
+	padding-right:0px!important;
+
+}
+.first_one{
+	width:100%!important;
+}
+.two_txt{
+	width:100%!important;
+}
+.first_two div.two_txt p{
+	margin:40px!important;
+}
+#in_main{
+	padding-left:0px!important;
+}
+}
+
+/* Custom Tippy Theme */
+
+.tippy-tooltip.everydaymentor-theme {
+	color: #55136c;
+	background-color: #ffffff;
+	border: 2px solid #55136c;
+}
+
+
+.tippy-popper[x-placement^=bottom] [x-arrow].arrow-big:before,
+.tippy-popper[x-placement^=bottom] [x-arrow].arrow-big:after {
+
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 100%;
+	width: 0;
+	height: 0;
+	margin-bottom: -9px;
+	pointer-events: none;
+	border: solid transparent;
+
+}
+
+.tippy-popper[x-placement^=bottom] [x-arrow].arrow-big:after {
+
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 12px;
+	margin-left: -12px;
+}
+
+.tippy-popper[x-placement^=bottom] [x-arrow].arrow-big:before {
+
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #55136c;
+	border-width: 15px;
+	margin-left: -15px;
+
+}
+
+.tippy-tooltip {
+
+	border-radius: 8px;
+
+}
+
+.collage {
+
+	position: relative;
+
+}
+
+	.collage img {}
+
+
+	.collage .overlay {
+
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+	}
+
+		.collage ul {
+
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+		}
+
+		.collage ul:after {
+
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+			font-size: 0;
+
+		}
+
+			.collage li {
+
+				float: left;
+				height: 100%;
+				/*background: pink;*/
+				text-indent: -9999px;
+				white-space: nowrap;
+				overflow: hidden;
+
+			}
+
+			.collage li:nth-child(even) {
+
+				/*background: orange;*/
+
+			}
+
+			.collage .collage-message-01 {
+
+				width: 12.5%;
+
+			}
+
+			.collage .collage-message-02 {
+
+				width: 12.5%;
+
+			}
+
+			.collage .collage-message-03 {
+
+				width: 10.5%;
+
+			}
+
+			.collage .collage-message-04 {
+
+				width: 10%;
+
+			}
+
+			.collage .collage-message-05 {
+
+				width: 12%;
+
+			}
+
+			.collage .collage-message-06 {
+
+				width: 10%;
+
+			}
+
+			.collage .collage-message-07 {
+
+				width: 11%;
+
+			}
+
+			.collage .collage-message-08 {
+
+				width: 11%;
+
+			}
+
+			.collage .collage-message-09 {
+
+				width: 10.5%;
+
+			}

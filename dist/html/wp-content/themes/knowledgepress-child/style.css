@@ -1,0 +1,15 @@
+/*
+Theme Name:     KnowledgePress Child
+Theme URI:      http://example.com/
+Description:    Child theme for the KnowledgePress theme
+Author:         Your name here
+Author URI:     http://example.com/about/
+Template:       knowledgepress
+Version:        0.0.0
+*/
+
+
+
+body {
+	background-color: red!important;
+}
