@@ -1,12 +1,25 @@
 .DS_Store
-*.sublime-project
-*.sublime-workspace
+*.nova
+*.code-workspace
 node_modules/
+organize/*
+
+# Ignore everything in the root except the "wp-content" directory.
+
+dist/html/*
+!dist/html/wp-content/
+
+# Ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory.
+
 dist/html/wp-content/*
 !dist/html/wp-content/themes/
-dist/html/wp-content/themes/twenty*
-dev/backup/
-dev/design/
-dev/documents/
-wp-config*
-*.sql
+
+# Ignore specific themes.
+
+dist/html/wp-content/themes/*
+!dist/html/wp-content/themes/enfold/
+!dist/html/wp-content/themes/enfold-child/
+!dist/html/wp-content/themes/knowledgepress/
+!dist/html/wp-content/themes/knowledgepress-child/
+
